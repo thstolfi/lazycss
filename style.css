@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: red 1px dashed; */
+}
+body{
+    background-color: #161616;
+    font-family: 'Kanit', sans-serif;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}  
+.left-column {
+    width: 350px;
+    min-width: 350px;
+    background-color: #1f1f1f;
+}
+.center-column {
+    flex: 1;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.right-column {
+    width: 250px;
+    background-color: #1f1f1f;
+}
+#subject{
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+}
+.section-container{
+    height: 80vh;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.section-box{
+    outline: #505050 1px solid;
+    padding: 15px;
+    border-radius: 15px;
+    width: 320px;
+    min-height: 100px;
+    margin-top: 30px;
+}
+.section-box-title{
+    position: absolute;
+    font-size: 20px;
+    color: #505050;
+    top: 14px;
+    left: 40px;
+    background-color: #1f1f1f;
+}
+.section-property{
+    color: #fcfcfc;
+    background-color: aqua;
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+}
