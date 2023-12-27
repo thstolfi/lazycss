@@ -36,31 +36,92 @@ body{
     background-color: #ffffff;
 }
 .section-container{
-    height: 80vh;
+    max-height: 75vh;
+    padding-bottom: 30px;
     min-width: 350px;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #505050;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #292929;
+    }
 }
 .section-box{
-    outline: #505050 1px solid;
+    outline: #878787 1px solid;
     padding: 15px;
     border-radius: 15px;
     width: 320px;
-    min-height: 100px;
     margin-top: 30px;
+    position: relative;
 }
 .section-box-title{
     position: absolute;
     font-size: 20px;
-    color: #505050;
-    top: 14px;
+    color: #878787;
+    top: -16px;
     left: 40px;
     background-color: #1f1f1f;
 }
 .section-property{
     color: #fcfcfc;
-    background-color: aqua;
-    width: 250px;
+    width: 270px;
     height: 30px;
     margin: 10px;
+    position: relative;
+}
+.section-property input{
+    width: 50px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    height: 18px;
+    text-align: center;
+    margin-left: 5px;
+    background-color: #161616;
+    color: #fcfcfc;
+    outline: #505050 1px solid;
+}
+.px-desc{
+    font-size: 13px;
+    margin-left: 3px;
+}
+.copy-icon{
+    background-color: #060606;
+    right: 40px;
+}
+.clean-icon{
+    background-color: #fcfcfc;  
+    right: 10px;
+}
+.section-button{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+.section-button:hover{
+    box-shadow: rgb(255, 255, 255, 0.2) 0px 0px 5px;
+}
+.section-button:active{
+    border: none;
+}
+.section-button img{
+    width: 18px;
+    height: 18px;
+}
+.buttons-holder{
+    width: 100px;
+    position: absolute;
+    top: 15%;
+    right: 0;
 }
