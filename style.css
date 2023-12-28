@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    /* outline: red 1px dashed; */
+   /*  outline: red 1px dashed; */
 }
 body{
     background-color: #161616;
@@ -25,15 +25,15 @@ body{
     display: flex;
     align-items: center;
 }
-
 .right-column {
     width: 250px;
+    min-width: 200px;
     background-color: #1f1f1f;
 }
 #subject{
     width: 300px;
     height: 300px;
-    background-color: #ffffff;
+    background-color: #814545;
 }
 .section-container{
     max-height: 75vh;
@@ -41,16 +41,6 @@ body{
     min-width: 350px;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    &::-webkit-scrollbar {
-        width: 5px;
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: #505050;
-    }
-    &::-webkit-scrollbar-track {
-        background-color: #292929;
-    }
 }
 .section-box{
     outline: #878787 1px solid;
@@ -72,7 +62,7 @@ body{
     color: #fcfcfc;
     width: 270px;
     height: 30px;
-    margin: 10px;
+    margin: 5px;
     position: relative;
 }
 .section-property input{
@@ -96,7 +86,7 @@ body{
     right: 40px;
 }
 .clean-icon{
-    background-color: #fcfcfc;  
+    background-color: #9b9b9b;  
     right: 10px;
 }
 .section-button{
@@ -124,4 +114,57 @@ body{
     position: absolute;
     top: 15%;
     right: 0;
+}
+#color-picker{
+    top: 1px;
+    right: 140px;
+    position: absolute;
+    width: 20px;
+    height: 24px;
+    margin: 0px;
+    padding: 0;
+    border: 0;
+    border: none;
+    outline: none;
+    appearance: none;
+    background-color: transparent;
+}
+#color-picker::-webkit-color-swatch{
+    border: none;
+    border-radius: 5px;
+}
+.code-holder{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #505050;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #292929;
+    }
+}
+.copy{
+    width: 100px;
+    height: 20px;
+    margin-left: 30px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #444444 ;
+}
+.pasted-code{
+    background-color: #131313;
+    width: 240px;
+    height: 290px;
+    border-radius: 10px;
+    border: none;
 }
