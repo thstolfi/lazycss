@@ -17,3 +17,16 @@ function updateSubject() {
   subject.style.opacity = document.getElementById('opacity').value;
   subject.style.boxShadow = `${document.getElementById('horizontal-effect').value}px ${document.getElementById('vertical-offset').value}px ${document.getElementById('blur-radius').value}px ${document.getElementById('spread-radius').value}px ${document.getElementById('shadow-color').value}`;
 }
+
+function adicionarTabindex() {
+  var inputs = document.querySelectorAll('.style-input');
+  var tabindex = 1;
+
+  inputs.forEach(function(input) {
+      input.setAttribute('tabindex', tabindex);
+      tabindex++;
+  });
+}
+
+// Chame a função quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', adicionarTabindex);
