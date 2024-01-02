@@ -1,9 +1,11 @@
+// Função para atualizar o estilo do #subject com base nos valores dos campos de entrada
+
 document.querySelectorAll('.style-input').forEach(function(input) {
   input.addEventListener('input', updateSubject);
 });
 
-// Função para atualizar o estilo do #subject com base nos valores dos campos de entrada
-function updateSubject() {
+
+function updateSubject(){
   var subject = document.getElementById('subject');
   
   subject.style.width = document.getElementById('width').value + 'px';
@@ -18,7 +20,9 @@ function updateSubject() {
   subject.style.boxShadow = `${document.getElementById('horizontal-effect').value}px ${document.getElementById('vertical-offset').value}px ${document.getElementById('blur-radius').value}px ${document.getElementById('spread-radius').value}px ${document.getElementById('shadow-color').value}`;
 }
 
-function adicionarTabindex() {
+// Funcão para adicionar a propriedade tabindex para todos inputs
+document.addEventListener('DOMContentLoaded', adicionarTabindex);
+function adicionarTabindex(){
   var inputs = document.querySelectorAll('.style-input');
   var tabindex = 1;
 
@@ -27,6 +31,3 @@ function adicionarTabindex() {
       tabindex++;
   });
 }
-
-// Chame a função quando o DOM estiver pronto
-document.addEventListener('DOMContentLoaded', adicionarTabindex);
