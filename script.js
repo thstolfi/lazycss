@@ -12,8 +12,8 @@ function updateSubject() {
   subject.style.borderStyle = document.getElementById('border-style').value;
   subject.style.borderColor = document.getElementById('border-color').value;
   subject.style.borderRadius = document.getElementById('border-radius').value + 'px';
-  subject.style.color = '#' + document.getElementById('color').value;
+  subject.style.color = document.getElementById('color').value;
   subject.style.backgroundColor = '#' + document.getElementById('background-color').value;
-  subject.style.opacity = document.getElementById('opacity').value + '%';
+  subject.style.opacity = document.getElementById('opacity').value;
   subject.style.boxShadow = `${document.getElementById('horizontal-effect').value}px ${document.getElementById('vertical-offset').value}px ${document.getElementById('blur-radius').value}px ${document.getElementById('spread-radius').value}px ${document.getElementById('shadow-color').value}`;
 }

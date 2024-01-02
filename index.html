@@ -14,7 +14,7 @@
                     <p class="section-box-title">Dimensions</p>
                     <div class="section-property">
                         width:
-                        <input class="style-input" type="text" name="" id="width">
+                        <input class="style-input" type="text" name="" id="width" tabindex="1">
                         <span class="px-desc">px</span>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="section-property">
                         height:
-                            <input class="style-input" type="text" name="" id="height">
+                            <input class="style-input" type="text" name="" id="height" tabindex="2">
                         <span class="px-desc">px</span>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
@@ -35,7 +35,7 @@
                     <p class="section-box-title">Borders</p>
                     <div class="section-property">
                         border-width:
-                        <input class="style-input" type="text" name="" id="border-width">
+                        <input class="style-input" type="text" name="" id="border-width" tabindex="3">
                         <span class="px-desc">px</span>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
@@ -44,7 +44,18 @@
                     </div>
                     <div class="section-property">
                         border-style:
-                            <input class="style-input" type="text" name="" id="border-style">
+                        <select class="style-input" name="border-style" id="border-style" tabindex="4">
+                            <option value="none">None</option>
+                            <option value="solid">Solid</option>
+                            <option value="dashed">Dashed</option>
+                            <option value="dotted">Dotted</option>
+                            <option value="double">Double</option>
+                            <option value="groove">Groove</option>
+                            <option value="ridge">Ridge</option>
+                            <option value="inset">Inset</option>
+                            <option value="outset">Outset</option>
+                            <option value="hidden">Hidden</option>
+                          </select>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
                             <button class="clean-icon section-button"><img src="assets/delete.png" alt=""></button>
@@ -52,7 +63,7 @@
                     </div>
                     <div class="section-property">
                         border-color:
-                            <input class="style-input" type="text" name="" id="border-color">
+                            <input class="style-input" type="text" name="" id="border-color" tabindex="5">
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
                             <button class="clean-icon section-button"><img src="assets/delete.png" alt=""></button>
@@ -60,7 +71,7 @@
                     </div>
                     <div class="section-property">
                         border-radius:
-                            <input class="style-input" type="text" name="" id="border-radius">
+                            <input class="style-input" type="text" name="" id="border-radius" tabindex="6">
                         <span class="px-desc">px</span>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
@@ -73,7 +84,7 @@
                     <p class="section-box-title">Colors</p>
                     <div class="section-property">
                         color:
-                        <input class="style-input" type="text" name="" id="color">
+                        <input class="style-input" type="text" name="" id="color" tabindex="7">
                         <input type="color" id="color-picker" name="" id="">
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
@@ -82,7 +93,7 @@
                     </div>
                     <div class="section-property">
                         background-color:
-                            <input class="style-input" type="text" name="" id="background-color">
+                            <input class="style-input" type="text" name="" id="background-color" tabindex="8">
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
                             <button class="clean-icon section-button"><img src="assets/delete.png" alt=""></button>
@@ -90,7 +101,8 @@
                     </div>
                     <div class="section-property">
                         opacity:
-                            <input class="style-input" type="text" name="" id="opacity">
+                            <input class="style-input" type="text" name="" id="opacity" tabindex="9">
+                            <span class="px-desc">%</span>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
                             <button class="clean-icon section-button"><img src="assets/delete.png" alt=""></button>
@@ -101,7 +113,7 @@
                     <p class="section-box-title">Box Shadow</p>
                     <div class="section-property">
                         color:
-                            <input class="style-input" type="text" name="" id="shadow-color">
+                            <input class="style-input" type="text" name="" id="shadow-color" tabindex="10">
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
                             <button class="clean-icon section-button"><img src="assets/delete.png" alt=""></button>
@@ -109,7 +121,7 @@
                     </div>
                     <div class="section-property">
                         horizontal offset:
-                        <input class="style-input" type="text" name="" id="horizontal-effect">
+                        <input class="style-input" type="text" name="" id="horizontal-effect" tabindex="11">
                         <span class="px-desc">px</span>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
@@ -118,7 +130,7 @@
                     </div>
                     <div class="section-property">
                         vertical offset:
-                            <input class="style-input" type="text" name="" id="vertical-offset">
+                            <input class="style-input" type="text" name="" id="vertical-offset" tabindex="12">
                         <span class="px-desc">px</span>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
@@ -127,7 +139,7 @@
                     </div>
                     <div class="section-property">
                         blur radius:
-                            <input class="style-input" type="text" name="" id="blur-radius">
+                            <input class="style-input" type="text" name="" id="blur-radius" tabindex="13">
                         <span class="px-desc">px</span>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>
@@ -136,7 +148,7 @@
                     </div>
                     <div class="section-property">
                         spread radius:
-                            <input class="style-input" type="text" name="" id="spread-radius">
+                            <input class="style-input" type="text" name="" id="spread-radius"  tabindex="14">
                         <span class="px-desc">px</span>
                         <div class="buttons-holder">
                             <button class="copy-icon section-button"><img src="assets/copy.png" alt=""></button>

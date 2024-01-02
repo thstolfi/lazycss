@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    outline: red 1px dashed;
+    /* outline: red 1px dashed; */
 }
 body{
     background-color: #161616;
@@ -62,6 +62,18 @@ body{
 }
 .section-property input{
     width: 50px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    height: 18px;
+    text-align: center;
+    margin-left: 5px;
+    background-color: #161616;
+    color: #fcfcfc;
+    outline: #505050 1px solid;
+}
+select{
+    width: 70px;
     outline: none;
     border: none;
     border-radius: 2px;
